@@ -118,20 +118,25 @@ header .header-top{
   padding-bottom: 38px;
   background-image: linear-gradient(to right ,#105091,#0F4f91,#1a3467);
 }
+.search {
+  margin-right:45px;
+  margin-bottom: 3px;
+}
 .header-top input {
   margin-top: 15px;
-  width: 163px;
-  height: 27px;
+  width: 173px;
+  height: 29px;
   align-items: center;
 }
 
 .header-top input[type="search"]::placeholder{
   padding-left: 10px;
+  font-size: 11px;
 }
 .header-top button{
-  padding: 5.2px;
+  padding:7px;
   float: right;
-  margin-top: 15.5px;
+  margin-top: 15px;
   border:#269FE3 ;
   background-color: #269FE3;
   color: white;
@@ -164,10 +169,6 @@ header .header-top{
   text-indent: -99999px;
 }
 
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -175,7 +176,16 @@ header .header-top{
 /*=================================
   main styling starts here
 =================================*/
-
+/* banner section starts */
+.banner {
+  display: flex;
+}
+.banner .wrapper {
+  display: flex;
+}
+.banner .wrapper a{
+  display: block;
+}
 
 
 
