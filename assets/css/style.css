@@ -106,7 +106,63 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper{
+  width: 100%;
+  margin: 5px;
+}
+header .header-top{
+  display: flex;
+  justify-content: space-around;
+  background-color: #1a3467;
+  padding-top: 20px;
+  padding-bottom: 38px;
+  background-image: linear-gradient(to right ,#105091,#0F4f91,#1a3467);
+}
+.header-top input {
+  margin-top: 15px;
+  width: 163px;
+  height: 27px;
+  align-items: center;
+}
 
+.header-top input[type="search"]::placeholder{
+  padding-left: 10px;
+}
+.header-top button{
+  padding: 5.2px;
+  float: right;
+  margin-top: 15.5px;
+  border:#269FE3 ;
+  background-color: #269FE3;
+  color: white;
+  cursor: pointer;
+}
+.header-bottom {
+  display: flex;
+ 
+  background-image: linear-gradient(to right,#218fd4,#186fb9,#1563AE,#176BB5,#218fd4);
+  font-size: 12px;
+  padding: 5px 0px 5px 0px;
+}
+.header-bottom a{
+  text-decoration: none;
+  color:#b5bec6;
+ ;
+}
+.header-bottom .nav-links {
+  margin-left: 170px;
+  padding-left: 60px;
+}
+.nav-links .nav li {
+  padding-right: 10px;
+  border-right: 1px solid #b5bec6;
+}
+.nav-links .nav li :hover{
+  color: aliceblue;
+}
+.hamburger{
+  text-indent: -99999px;
+}
 
 
 
