@@ -178,16 +178,20 @@ header .header-top{
 =================================*/
 /* banner section starts */
 .banner {
-  padding-bottom: 10px;
+  width: 70%;
+  margin-left:196px;
+  width :677px;
+  height: 230px;
+  border-bottom: 1px solid gray;
 }
 .banner .wrapper{
   display: flex;
-  width: 70%;
   margin-top: 20px;
   border: 1px solid #666;
-  margin-left: 200px;
   width :677px;
   height: 215px;
+  margin-bottom: 10px;
+ 
 }
 .banner-headlines{
   flex-basis: 50%;
@@ -225,12 +229,23 @@ header .header-top{
 .banner-image figure img{
   width: 374px;
   height: 215px;
+}
+/*--news-articles section--*/
+.news-articles{
+  margin-top: 10px;
+  width: 70%;
+  margin-left:130px;
 
 }
+.news-articles .wrapper .articles {
+  display:flex;
+ 
+}
+.articles li figure {
+  width:208px;
+  height: 116px;
+  
 
-.banner-row .banner-col{
-  flex-basis: 60%;
-  border: 1px solid #666;
 }
 
 
