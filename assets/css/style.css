@@ -152,17 +152,16 @@ header .header-top{
 .header-bottom a{
   text-decoration: none;
   color:#b5bec6;
- ;
 }
 .header-bottom .nav-links {
   margin-left: 170px;
   padding-left: 60px;
 }
-.nav-links .nav li {
+.nav-bar .nav-links li {
   padding-right: 10px;
   border-right: 1px solid #b5bec6;
 }
-.nav-links .nav li :hover{
+.nav-bar .nav-links li :hover{
   color: aliceblue;
 }
 .hamburger{
@@ -234,20 +233,33 @@ header .header-top{
 .news-articles{
   margin-top: 10px;
   width: 70%;
-  margin-left:130px;
+  margin-left:9.5%;
 
 }
-.news-articles .wrapper .articles {
+.news-articles .wrapper{display:flex;}
+.articles{
   display:flex;
- 
 }
-.articles li figure {
-  width:208px;
-  height: 116px;
-  
-
+.articles li {
+  padding-right: 5px;
+  margin-right: 4%;
+  border-right: 1px solid grey;
+  align-items:left;
 }
 
+.articles li figure {width:208px;}
+
+.articles li h4 a {
+  text-decoration: none;
+  color: #1a3467;
+  font-size: 12px;
+  padding-top:12px
+}
+.articles li h2 a {
+  padding-top: 12px;
+  color: #1563AE;
+  font-size: 16px;
+}
 
 
 
