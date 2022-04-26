@@ -148,6 +148,7 @@ header .header-top{
   background-image: linear-gradient(to right,#218fd4,#186fb9,#1563AE,#176BB5,#218fd4);
   font-size: 12px;
   align-items: center;
+  padding-top: 5px;
 }
 .header-bottom a{
   text-decoration: none;
@@ -156,7 +157,8 @@ header .header-top{
 .header-bottom .nav-links {
   margin-left: 170px;
   padding-left: 60px;
-  padding-bottom:10px ;
+  padding-bottom:5px ;
+  
 }
 .nav-bar .nav-links li {
   padding-right: 10px;
@@ -168,7 +170,7 @@ header .header-top{
 }
 
 .hamburger{
-  text-indent: -99999px;
+  display: none;
 }
 
 /*=================================
@@ -287,7 +289,7 @@ header .header-top{
 /* --video section start--*/
 .video-section {
   display: flex;
-  width: 65%;
+  width: 68%;
   margin-left: 9%;
   
   padding-bottom: 15px;
@@ -393,6 +395,7 @@ aside {
   position: absolute;
   top:27%;
   right: 1%;
+  margin-left: 1%;
 }
 
 .newsletter .wrapper {
@@ -513,20 +516,19 @@ footer .footer-top {
  padding: 5px;
  border-radius: 50%;
 }
-.social-links ul li {
-  color: #fff;
-}
+
+.social-links ul li { color: #fff;}
 .social-links ul li:nth-child(1)::before{content: "\f0e1";}
 
 .social-links ul li:nth-child(2)::before{content: "\f099";}
 
-.social-links ul li:nth-child(3)::before{content: "\f167"; color: red;}
+.social-links ul li:nth-child(3)::before{
+  content: "\f167"; 
+  color: red;}
 
 .social-links ul li:nth-child(4)::before{content: "\f39e";}
 
-.social-links a{
-  text-indent: -999999px;
-}
+.social-links a{text-indent: -999999px;}
 .flexbox-container {
   display: flex;
   justify-content: space-around;
@@ -552,8 +554,149 @@ footer .footer-top {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 1920px) {
+  .wrapper {max-width:1920px;}
+
+  .banner .wrapper{width:100%;}
+
+  aside {
+    width:30%;
+  position: absolute;
+  top:27%;
+  right: 1%;
+  margin-left: 1%;
+}
+
+}
+@media only screen and (max-width: 1440px) {
+  aside {
+    width: 30%;
+    position: absolute;
+    top: 17%;
+    right: 1%;
+    margin-left: 1%;
+}
+.banner {width: 55%;}
+.articles li {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+}
+@media only screen and (max-width: 1280px) { 
+  aside {
+    width: 30%;
+    position: absolute;
+    top: 27.5%;
+    left: 70%;
+}
+}
+@media only screen and (max-width: 1210px){
+  aside {
+    width: 30%;
+    position: absolute;
+    top: 17%;
+    left: 73%;
+}
+.video-section {
+  display: flex;
+  width: 70%;
+ }
+ .banner { width: 57%;}
+}
+@media only screen and (max-width: 1024px){
+  .banner{
+    width: 62%;
+    margin-left: 11%;
+  }
+  .articles li {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.news-articles {
+  margin-top: 10px;
+  width: 45%;
+  margin-left: 4%;
+  padding-bottom: 20px
+}
+.video-section {
+  display: flex;
+  width: 75%;
+  margin-left: 5%;
+  padding-bottom: 15px;
+}
+aside{
+  width: 30%;
+  position: absolute;
+  top: 17%;
+  left: 73%;
+}
+}
+@media only screen and (max-width: 1025px){
+  .banner{
+    margin-left: 5%;
+    width: 69%;
+}
+.news-articles{margin-left: -1%;}
+.video-section{
+  margin-left: 2%;
+  width: 78%;}
   
+  .news{
+    margin-left: 0%;
+    width: 85%;
+  } 
+}
+@media only screen and (max-width: 995px){
+  .news-articles{
+  margin-left: 2%;}
+}
+@media only screen and (max-width: 767px)
+{
+  .articles{
+    border-right: none;}
 
+  .articles ul li {
+    border-right: none;
+    border-bottom: 1px solid grey;
+  }
+  .articles ul li p{
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 767px){
+  .header-bottom {
+    padding-bottom: 20px;
+  }
+  .hamburger{
+    text-indent: -99999px;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger::after{
+    content: "\f0c9";
+    padding: 10px;
+    display: flex;
+    color: #fff;
+    font-family: "fontawesome";
+    font-size: 2rem;
+    text-indent: 0;
+  }
+  .nav-links { display: none; }
+  .hamburger:hover + .nav-links {
+    position: absolute;
+    top:11.5%;
+    left:-21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:skyblue;
+    width: 30%;
+  }
 
+ .nav-links li a{color: #fff;}
 
-}  
+.nav-links li {margin: 2.5rem 0;}
+
+}
