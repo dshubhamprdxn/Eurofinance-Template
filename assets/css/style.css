@@ -144,10 +144,10 @@ header .header-top{
 }
 .header-bottom {
   display: flex;
- 
+ height: 26px;
   background-image: linear-gradient(to right,#218fd4,#186fb9,#1563AE,#176BB5,#218fd4);
   font-size: 12px;
-  padding: 5px 0px 5px 0px;
+  align-items: center;
 }
 .header-bottom a{
   text-decoration: none;
@@ -156,14 +156,17 @@ header .header-top{
 .header-bottom .nav-links {
   margin-left: 170px;
   padding-left: 60px;
+  padding-bottom:10px ;
 }
 .nav-bar .nav-links li {
   padding-right: 10px;
   border-right: 1px solid #b5bec6;
 }
-.nav-bar .nav-links li :hover{
+.nav-bar .nav-links :hover{
   color: aliceblue;
+  background: #1563AE;
 }
+
 .hamburger{
   text-indent: -99999px;
 }
@@ -180,7 +183,8 @@ header .header-top{
   width: 70%;
   margin-left:196px;
   width :677px;
-  height: 230px;
+  height: 220px;
+  position: relative;
   border-bottom: 1px solid gray;
 }
 .banner .wrapper{
@@ -188,8 +192,9 @@ header .header-top{
   margin-top: 20px;
   border: 1px solid #666;
   width :677px;
-  height: 215px;
-  margin-bottom: 10px;
+  height: 198px;
+  margin-bottom: 5px;
+  
  
 }
 .banner-headlines{
@@ -226,25 +231,26 @@ header .header-top{
   font-size: 10px;
 }
 .banner-image figure img{
-  width: 374px;
-  height: 215px;
+  width: 100%;
+  height: 198px;
 }
 /*--news-articles section--*/
 .news-articles{
   margin-top: 10px;
-  width: 57%;
-  margin-left:8.5%;
+  width: 65%;
+  margin-left:9%;
   padding-bottom: 20px;
-  border-bottom: 1px solid #70728E;
+ 
 }
-.news-articles .wrapper{
-  display:flex;
-  
-}
+.news-articles .wrapper{ display:flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #70728E; }
+
 .articles{
   display:flex;
   flex-basis:23.3%;
 }
+
 .articles li {
   padding-right: 15px;
   padding-left: 15px;
@@ -252,6 +258,9 @@ header .header-top{
   border-right: 1px solid grey;
   align-items:left;
 }
+
+.articles li:nth-child(3){border-right: 0px;}
+
 .articles li p{
   font-size: 11px;
   padding-top: 5px;
@@ -278,10 +287,14 @@ header .header-top{
 /* --video section start--*/
 .video-section {
   display: flex;
-  width: 58%;
+  width: 65%;
   margin-left: 9%;
-  border-bottom: 1px solid #70728E;
+  
   padding-bottom: 15px;
+}
+.video-section .wrapper{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #70728E;
 }
 .video-section .wrapper h2{
   padding-top: 15px;
@@ -292,10 +305,13 @@ header .header-top{
 }
 .video-gallery .videos{
   display: flex;
-  flex-basis:20% ;
+  justify-content:center;
+}
+.videos li {
+  padding-right: 10px;
 }
 video {
-  width:90%;
+  width:99%;
 }
 .videos h4 a{
   font-size: 12px;
@@ -305,6 +321,8 @@ video {
 /*--news article --*/
 .news {
   width: 70%;
+  margin-left: 7%;
+  padding-bottom: 20px;
 }
 .news .wrapper {
   display: flex;
@@ -315,16 +333,138 @@ video {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-top: 15px;
 }
 .news-container-item li {
-  width: 33.3%;
-  height: 194px;
+  width: 28%;
+  height: 170px;
+  margin-bottom: 20px;
+  
+}
+.news-container-item li h4{
+  font-size: 12px;
+  color:#1a3467 ;
+}
+.news-container-item li h3{
+  color: #0F4f91;
+  font-size: 15px;
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
+.news-container-item span{
+  font-size: 11px;
+  color: #666;
+}
+.news-container-item p{
+  font-size: 10px;
+  color:#817E80;
+  padding-top: 10px;
+  margin-right:5% ;
+}
+.news-container-item li:nth-child(even){
+  padding-left: 14px;
+  border-left: 1px solid #d4dfeb;
+}
+.news-container-item li:nth-child(odd){
+  padding-left: 14px;
+  border-left: 1px solid #d4dfeb;
+}
 
+.news .show-btn {
+  text-align: center;
+}
+.news .show-btn a{
+  text-decoration: none;
+  color: white;
+  border: 1px solid #218fd4;
+  background: #218fd4;
+  font-size: 12px;
+  padding: 10px 32px 10px 32px;
+}
+.show-btn a:hover{
+  font-size: 13px;
+  background-color:#218fd4 ;
+  opacity: 0.8;
+}
+
+aside {
+  width:30%;
+ /* float:right;*/
+  position: absolute;
+  top:27%;
+  right: 1%;
+}
+
+.newsletter .wrapper {
+ border: 1px solid #105091;
+ margin-left: 6%;
+ width: 60%;
+ padding: 10px;
+ background-image: linear-gradient(to right ,#1a3467,#1a3467,#1a3467,#269FE3);
+}
+.newsletter h2{
+  padding: 10px 0px 10px;
+  font-size: 16px;
+  color: aliceblue;
+}
+.newsletter .wrapper a{
+  text-decoration: none;
+  font-size: 11px;
+  border: 1px solid #269FE3 ;
+  background-color: #269FE3;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  margin-left: 7%;
+  color: aliceblue;
+  font-weight: bold;
+  
+}
+.most-viewed-news {
+  margin-top: 15px;
+  
+}
+.most-viewed-news .wrapper{
+  margin-left: 6%;
+  width: 66%;
+  border: 1px solid #b5bec6;
+}
+.most-viewed-news .wrapper h2{
+  padding: 10px 10px 10px;
+  color: aliceblue;
+  background-color:#105091;
 }
 
 
+.most-viewed-news-list .news-item li{
+  padding: 15px 0px 5px 10px;
+  border-bottom: 1px solid gray;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
+.news-item li:nth-child(4) {
+  border-bottom: 0px;
+  padding-bottom: 15px;
+}
 
+.news-item li h4{
+  font-size: 12px;
+  color:#1a3467;
+ 
+}
+.news-item li h3 a {
+  color: #0F4f91;
+  font-size: 15px;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+.news-item span {
+  padding-top: 15px;
+  font-size: 12px;
+  color: #666;
+}
 /*=================================
   main styling ends here
 =================================*/
@@ -332,9 +472,75 @@ video {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  display: flex;
+}
+footer .wrapper{width: 100%;}
+footer .footer-top {
+  display: flex;
+  background-image:linear-gradient(to left,#135CA6,#0E4E8F,#133F79,#19366A,#1D3161);
+  justify-content: space-evenly;
+  padding: 31px 50px 55px 20px;
+}
+.footer-top .links{
+  padding-top: 5px;
+}
+.footer-top .links li{
+  display: block;
+}
+.footer-top ul li a{
+  color: aliceblue;
+  font-size: 12px;
+  opacity: 0.8;
+}
+.links h2 , 
+.social-links h2
+{
+  color: aliceblue;
+  font-size: 14px;
+  opacity: 0.9;
+  padding-bottom: 10px;
+}
+.links li a:hover{color: gold;}
 
+.social-links ul li::before {
+  content: "  ";
+ font-family: "fontAwesome";
+ text-indent: 0;
+ color: #218fd4;
+ border: 2px solid #fff;
+ background-color: #fff;
+ padding: 5px;
+ border-radius: 50%;
+}
+.social-links ul li {
+  color: #fff;
+}
+.social-links ul li:nth-child(1)::before{content: "\f0e1";}
 
+.social-links ul li:nth-child(2)::before{content: "\f099";}
 
+.social-links ul li:nth-child(3)::before{content: "\f167"; color: red;}
+
+.social-links ul li:nth-child(4)::before{content: "\f39e";}
+
+.social-links a{
+  text-indent: -999999px;
+}
+.flexbox-container {
+  display: flex;
+  justify-content: space-around;
+  background-image:linear-gradient(to left,#16274e,#0e3462,#0a4076,#0c4882);
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.flexbox-container ul li a:hover{color:gold}
+.flexbox-container ul li a , .flexbox-container span {
+  color: #fff;
+  font-size: 10px;
+  opacity: 0.7;
+}
+.flexbox-container span{padding-top: 5px;}
 
 
 
@@ -345,7 +551,8 @@ video {
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 1920px) {
+  
 
 
 
